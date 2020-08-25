@@ -7,10 +7,16 @@
         <link rel="stylesheet" href="index.css">
 
         <style>
+            * {
+                --headerFontSize: 2rem;
+                --headerPadding: 0.5rem;
+                --footerFontSize: 1rem;
+                --footerPadding: 1rem;
+            }
             header {
                 background-color: lightgreen;
-                font-size: 1.5rem;
-                padding: 1rem;
+                font-size: var(--headerFontSize);
+                padding: var(--footerPadding);
                 text-align: center;
             }
 
@@ -18,19 +24,30 @@
                 background-color: lightblue;
                 font-size: 1.5rem;
                 text-align: center;
+                /* Calculates main's browser height by detracting font-size & padding of header/footer */
+                height: calc(100vh
+                    - var(--headerFontSize)
+                    - (2 * var(--headerPadding))
+                    - var(--footerFontSize)
+                    - (2* var(--footerPadding))
+                );
+                /* Prevent main's text from overflowing the footer */
+                overflow-y: auto;
             }
 
             footer {
                 background-color: lightgreen;
-                font-size: 1.5rem;
-                padding: 1rem;
+                font-size: var(--footerFontSize);
+                padding: var(--footerPadding);
                 text-align: center;
             }
         </style>
     </head>
     <body>
         <header>Header</header>
-        <main>Main</main>
+        <main>
+            Main
+        </main>
         <footer>Footer</footer>
 
         <script src="index.pack.js"></script>
