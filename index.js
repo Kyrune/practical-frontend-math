@@ -3,11 +3,11 @@
 //     console.log(Math.floor((Math.random() * 6) + 1));
 // }
 
-function roll(min, max) {
+function roll(min, max, floatFlag) {
     let r = Math.random();
     r *= (max - min);
     r += min;
-    return r;
+    return floatFlag ? r : Math.floor(r);
 }
 
-console.log(roll(1, 5));
+console.log(roll(1, 5, 1));
