@@ -4,7 +4,10 @@
 // }
 
 function roll(min, max) {
-    
+    let r = Math.random();
+    r *= (max - min);
+    r += min;
+    return r;
 }
 
-console.log(roll());
+console.log(roll(1, 5));
