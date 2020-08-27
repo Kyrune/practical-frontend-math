@@ -16,6 +16,10 @@ function roll(min, max, floatFlag) {
 
 let userNames = ['James', 'Jane', 'Ryan', 'Rebecca'];
 
+// Ages are generated from 12 to 64
+
+// Height includes a floating number
+
 let user = {
     name: userNames[roll(0, userNames.length)],
     age: roll(12, 65),
