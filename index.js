@@ -17,7 +17,8 @@ function roll(min, max, floatFlag) {
 let userNames = ['James', 'Jane', 'Ryan', 'Rebecca'];
 
 let user = {
-    name: userNames[roll(0, userNames.length)]
+    name: userNames[roll(0, userNames.length)],
+    age: roll(12, 65)
 };
 
 console.log(user);
