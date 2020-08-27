@@ -18,7 +18,8 @@ let userNames = ['James', 'Jane', 'Ryan', 'Rebecca'];
 
 let user = {
     name: userNames[roll(0, userNames.length)],
-    age: roll(12, 65)
+    age: roll(12, 65),
+    height: roll(5.1, 6.1, 1).toFixed(1)
 };
 
 console.log(user);
