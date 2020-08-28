@@ -14,19 +14,20 @@ function roll(min, max, floatFlag) {
 
 // console.log(roll(1, 5, 1));
 
-let userNames = ['James', 'Jane', 'Ryan', 'Rebecca'];
+// let userNames = ['James', 'Jane', 'Ryan', 'Rebecca'];
 
 // Ages are generated from 12 to 64
 
 // Height includes a floating number
 
-let user = {
-    name: userNames[roll(0, userNames.length)],
-    age: roll(12, 65),
-    height: roll(5.1, 6.1, 1).toFixed(1)
-};
+// let user = {
+//     name: userNames[roll(0, userNames.length)],
+//     age: roll(12, 65),
+//     height: roll(5.1, 6.1, 1).toFixed(1)
+// };
 
-console.log(user);
+// console.log(user);
 
 // Note to self: found on Emojipedia
 let possibleProducts = ["🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🥭", "🍎", "🍏", "🍐", "🍑", "🍒", "🍓", "🥝", "🍅", "🥥", "🥑", "🍆", "🥔", "🥕", "🌽", "🌶", "🥒", "🥬", "🥦"]
+
