@@ -31,3 +31,11 @@ function roll(min, max, floatFlag) {
 // Note to self: found on Emojipedia
 let possibleProducts = ["🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🥭", "🍎", "🍏", "🍐", "🍑", "🍒", "🍓", "🥝", "🍅", "🥥", "🥑", "🍆", "🥔", "🥕", "🌽", "🌶", "🥒", "🥬", "🥦"]
 
+let products = [...Array(5)].map((_, i) => {
+    return {
+        index: i,
+        title: possibleProducts[roll(0, possibleProducts.length)]
+    }
+})
+
+console.log(products);
