@@ -34,7 +34,8 @@ let possibleProducts = ["🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", 
 let products = [...Array(5)].map((_, i) => {
     return {
         index: i,
-        title: possibleProducts[roll(0, possibleProducts.length)]
+        title: possibleProducts[roll(0, possibleProducts.length)],
+        price: roll(1, 10, 1).toFixed(2)
     }
 })
 
