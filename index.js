@@ -38,6 +38,19 @@ let products = [...Array(5)].map((_, i) => {
         price: roll(1, 10, 1).toFixed(2),
         count: roll(1, 6)
     }
-})
+});
 
 console.log(products);
+
+let productsElement = document.getElementById("Products");
+
+let cartHtml = '';
+products.forEach(function(product) {
+    cartHtml += `<div class="product">
+        <div>${product.title}</div>
+        <div>💲${product.price}</div>
+        <div>x${product.count}</div>
+    </div>`
+});
+
+productsElement.innerHTML = cartHtml
