@@ -40,7 +40,9 @@ let products = [...Array(5)].map((_, i) => {
     }
 });
 
-console.log(products);
+// console.log(products);
+
+// Calculate the Cart Total using .reduce
 
 let productsElement = document.getElementById("Products");
 
