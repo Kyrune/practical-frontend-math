@@ -43,6 +43,13 @@ let products = [...Array(5)].map((_, i) => {
 // console.log(products);
 
 // Calculate the Cart Total using .reduce
+let cartTotal = products.reduce(function(accumulator, product) {
+
+}, 0)
+
+
+
+
 
 let productsElement = document.getElementById("Products");
 
