@@ -47,6 +47,8 @@ let cartTotal = products.reduce(function(accumulator, product) {
 
 }, 0)
 
+console.log(cartTotal);
+
 
 
 
