@@ -50,12 +50,14 @@ let cartTotal = products.reduce(function(accumulator, product) {
 
 // console.log(cartTotal);
 
+// roll() for a random Tax Rate between 5% & 9%
+// rounding to the nearest 10th
 let taxRate = roll(5, 9, 1).toFixed(1);
 
+// Apply that Tax Rate to the Cart Total
 function taxed(value) {
     return taxRate / 100 * cartTotal + parseFloat(cartTotal);
 };
-
 let taxedTotal = taxed(cartTotal);
 console.log(taxedTotal);
 
