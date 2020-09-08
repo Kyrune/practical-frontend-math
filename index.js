@@ -52,6 +52,10 @@ let cartTotal = products.reduce(function(accumulator, product) {
 
 let taxRate = roll(5, 9, 1).toFixed(1);
 
+function taxed(value) {
+    
+}
+
 
 
 let productsElement = document.getElementById("Products");
