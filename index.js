@@ -44,10 +44,11 @@ let products = [...Array(5)].map((_, i) => {
 
 // Calculate the Cart Total using .reduce
 let cartTotal = products.reduce(function(accumulator, product) {
+    console.log(accumulator, product)
+    return accumulator + parseFloat(product.price) * product.count;
+}, 0).toFixed(2);
 
-}, 0)
-
-console.log(cartTotal);
+// console.log(cartTotal);
 
 
 
