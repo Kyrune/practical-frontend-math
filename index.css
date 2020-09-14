@@ -39,6 +39,12 @@ main {
     overflow-y: auto;
 }
 
+#ShoppingCart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .product {
     display: flex;
     font-size: 1.8rem;
