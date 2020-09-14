@@ -45,6 +45,11 @@ main {
     justify-content: space-between;
 }
 
+#Products {
+    margin: 1rem;
+    height: calc(var(--mainHeight) - 40%);
+}
+
 .product {
     display: flex;
     font-size: 1.8rem;
