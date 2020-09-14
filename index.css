@@ -5,6 +5,13 @@
     --headerPadding: 0.5rem; 
     --footerFontSize: 1rem;
     --footerPadding: 1rem;
+    --mainHeight: calc(
+        100vh
+        - var(--headerFontSize)
+        - (2 * var(--headerPadding))
+        - var(--footerFontSize)
+        - (2 * var(--footerPadding))
+    );
 }
 
 html {
