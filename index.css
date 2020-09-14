@@ -65,6 +65,14 @@ main {
     justify-content: center;
 }
 
+#Summary div {
+    border: 0.1rem solid black;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    margin: 0.4rem;
+    background-color: lightgreen;
+}
+
 .product {
     display: flex;
     font-size: 1.8rem;
