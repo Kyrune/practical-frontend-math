@@ -72,6 +72,7 @@ products.forEach(function(product) {
         <div>${product.title}</div>
         <div>💲${product.price}</div>
         <div>x${product.count}</div>
+        <div>${product.weight}oz</div>
     </div>`
 });
 
