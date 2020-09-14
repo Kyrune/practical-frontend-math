@@ -51,6 +51,10 @@ let cartTotal = products.reduce(function(accumulator, product) {
     return accumulator + parseFloat(product.price) * product.count;
 }, 0).toFixed(2);
 
+let totalWeight = products.reduce(function(accumulator, product) {
+    return accumulator + parseFloat(product.weight) * product.count;
+}, 0).toFixed(2);
+
 // console.log(cartTotal);
 
 // roll() for a random Tax Rate between 5% & 9%
