@@ -50,6 +50,14 @@ main {
     height: calc(var(--mainHeight) - 40%);
 }
 
+#Summary {
+    height: calc(var(--mainHeight) - 40%);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .product {
     display: flex;
     font-size: 1.8rem;
