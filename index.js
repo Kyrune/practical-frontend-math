@@ -72,7 +72,6 @@ console.log(taxedTotal);
 
 
 let productsElement = document.getElementById("Products");
-
 let cartHtml = '';
 products.forEach(function(product) {
     cartHtml += `<div class="product">
@@ -84,3 +83,11 @@ products.forEach(function(product) {
 });
 
 productsElement.innerHTML = cartHtml
+
+let summary = document.getElementById("Summary");
+let summaryHtml = '';
+summaryHtml += `<div>Total: 💲${cartTotal}</div>`;
+summaryHtml += `<div>Tax Rate: ${taxRate}%</div>`;
+summaryHtml += `<div>Taxed Total: 💲${taxedTotal}</div>`;
+summaryHtml += `<div>Total Weight: ${totalWeight}oz</div>`;
+summary.innerHTML = summaryHtml;
