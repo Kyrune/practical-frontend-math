@@ -36,6 +36,7 @@ let products = [...Array(5)].map((_, i) => {
         index: i,
         title: possibleProducts[roll(0, possibleProducts.length)],
         price: roll(1, 10, 1).toFixed(2),
+        weight: roll(6, 20, 1).toFixed(2),
         count: roll(1, 6)
     }
 });
